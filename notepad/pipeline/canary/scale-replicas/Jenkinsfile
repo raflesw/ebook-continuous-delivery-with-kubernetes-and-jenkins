@@ -1,6 +1,6 @@
 podTemplate(label: 'scale-canary-replicas',
   containers: [
-    containerTemplate(name: 'kubectl', image: 'jorgeacetozi/kubectl:1.7.0', ttyEnabled: true, command: 'cat')
+    containerTemplate(name: 'kubectl', image: 'bitnami/kubectl:latest', ttyEnabled: true, command: 'cat')
   ])
 {
   node ('scale-canary-replicas') {
