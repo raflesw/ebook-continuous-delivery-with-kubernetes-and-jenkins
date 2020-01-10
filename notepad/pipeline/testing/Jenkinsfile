@@ -43,13 +43,14 @@ podTemplate(label: 'testing',
         }
       }
     }
-
+/*
     stage('Destroy the Testing environment if it exists') {
       container('kubectl') {
         // sh 'kubectl delete all -l env=testing'
         sh 'kubectl get pods'
-      }
+      }    
     }
+*/
 
     stage('Start a new Testing environment') {
       container('kubectl') {
