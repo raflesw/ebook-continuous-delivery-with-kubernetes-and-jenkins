@@ -1,6 +1,6 @@
 podTemplate(label: 'testing', 
   containers: [
-    containerTemplate(name: 'kubectl', image: 'jorgeacetozi/kubectl:1.7.0', ttyEnabled: true, command: 'cat'),
+    containerTemplate(name: 'kubectl', image: 'bitnami/kubectl:latest', ttyEnabled: true, command: 'cat'),
     containerTemplate(name: 'mysql', image: 'mysql:5.7', envVars: [
       envVar(key: 'MYSQL_DATABASE', value: 'notepad'),
       envVar(key: 'MYSQL_ROOT_PASSWORD', value: 'root')
